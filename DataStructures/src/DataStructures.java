@@ -6,7 +6,7 @@ public class DataStructures {
 
     // returns true if array contains value
     // otherwise returns false
-    public static boolean contains(String[] input, String value) {
+    private static boolean contains(String[] input, String value) {
         for (String element : input) {
             if (value.equals(element)) {
                 return true;
@@ -17,7 +17,7 @@ public class DataStructures {
 
     // returns true if array contains value
     // otherwise returns false
-    public static boolean contains(int[] input, int value) {
+    private static boolean contains(int[] input, int value) {
         for (int element : input) {
             if (value == element) {
                 return true;
@@ -26,10 +26,7 @@ public class DataStructures {
         return false;
     }
 
-    public static void main(String[] args) throws NoSuchMethodException {
-        // test of Integer value
-        //int test = 1000000000*3;
-        //System.out.print(test);
+    public static void main(String[] args) {
 
         /* TEST of BinarySearchTree and AVLtree */
         int[] toInsert = {10, 18, 15, 29, 48, 67, 88};
